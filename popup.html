@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Auto Site Opener</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+      min-height: 100vh;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-radius: 24px;
+      border: 1.5px solid rgba(255,255,255,0.25);
+      transition: box-shadow 0.3s;
+    }
+    .glass:hover {
+      box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.22);
+    }
+    .fancy-border {
+      border: 1.5px solid rgba(99, 102, 241, 0.18);
+      box-shadow: 0 2px 8px 0 rgba(99, 102, 241, 0.08);
+    }
+    .fancy-btn {
+      background: linear-gradient(90deg, #6366f1 0%, #818cf8 100%);
+      box-shadow: 0 2px 8px 0 rgba(99, 102, 241, 0.18);
+    }
+    .fancy-btn:hover {
+      background: linear-gradient(90deg, #4f46e5 0%, #6366f1 100%);
+    }
+  </style>
+</head>
+<body class="w-[520px] min-w-[300px] p-4 min-h-screen font-['Roboto'] flex flex-col justify-center items-center">
+  <div class="glass shadow-xl rounded-2xl p-8 w-full max-w-md mt-12">
+    <h3 class="text-3xl font-bold text-indigo-600 mb-6 text-center tracking-tight drop-shadow">Auto Site Opener</h3>
+    <div class="space-y-4">
+      <input 
+        type="time" 
+        id="time" 
+        class="block w-full px-4 py-2 fancy-border rounded-lg focus:ring-2 focus:ring-indigo-400 focus:outline-none text-indigo-700 font-medium bg-white/60 placeholder:text-indigo-100"
+        required 
+      />
+      <textarea 
+        id="urls" 
+        rows="4"
+        class="block w-full px-4 py-2 fancy-border rounded-lg focus:ring-2 focus:ring-indigo-400 focus:outline-none text-indigo-700 font-medium bg-white/60 resize-none placeholder:text-indigo-100"
+        placeholder="Enter one or more URLs (one per line)" 
+        required
+      ></textarea>
+      <button 
+        id="add" 
+        class="w-full cursor-pointer fancy-btn hover:bg-indigo-700 text-white font-bold py-2 rounded-lg shadow transition duration-150"
+      >
+        Add Schedule
+      </button>
+    </div>
+
+    <h4 class="text-xl font-semibold text-indigo-500 mt-8 mb-3 border-b border-indigo-100 pb-1">Current Schedules</h4>
+    <ul id="list" class="space-y-2 text-indigo-900"></ul>
+  </div>
+
+  <footer class="mt-8 text-slate-100 text-sm drop-shadow">
+    Made by 
+    <a href="https://github.com/namans4ini" target="_blank" class="hover:underline hover:text-indigo-500 font-medium transition">
+      Naman Saini
+    </a>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
