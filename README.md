@@ -18,7 +18,7 @@ A lightweight productivity extension that automatically opens your favorite webs
 
 ## 📦 Installation
 
-1. Clone this repo or [download as ZIP](https://github.com/namans4ini/auto-site-opener/archive/refs/heads/main.zip).
+1. Clone this repo or [download as ZIP](https://github.com/NamanS4ini/auto-site-opener/releases/download/release/AutoSiteOpener.zip).
 2. Open Chrome and go to `chrome://extensions/`.
 3. Enable **Developer Mode** (top right).
 4. Click **"Load Unpacked"** and select the project folder.
@@ -66,7 +66,6 @@ A lightweight productivity extension that automatically opens your favorite webs
 ├── output.css        # Tailwind compiled CSS
 ├── input.css         # Tailwind source (optional)
 ├── background.js
-└── style.css         # If used separately
 ```
 
 ---
@@ -82,4 +81,4 @@ A lightweight productivity extension that automatically opens your favorite webs
 
 ## 🙌 Credits
 
-Made by [namans4ini](https://github.com/namans4ini) — feel free to contribute or fork!
+Made by [Me](https://github.com/namans4ini) — feel free to contribute or fork!
